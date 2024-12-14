@@ -5,22 +5,56 @@
 @layer base {
   /*#region Colors */
   :root {
-    --neutral-950: #0e121b;
-    --neutral-900: #181b25;
-    --neutral-800: #222530;
-    --neutral-700: #2b303b;
-    --neutral-600: #525866;
-    --neutral-500: #717784;
-    --neutral-400: #99a0ae;
-    --neutral-300: #cacfd8;
-    --neutral-200: #e1e4ea;
-    --neutral-100: #f2f5f8;
-    --neutral-50: #f5f7fa;
-    --neutral-0: #ffffff;
+    --gray-950: #171717;
+    --gray-900: #1c1c1c;
+    --gray-800: #292929;
+    --gray-700: #333333;
+    --gray-600: #5c5c5c;
+    --gray-500: #7b7b7b;
+    --gray-400: #a3a3a3;
+    --gray-300: #d1d1d1;
+    --gray-200: #ebebeb;
+    --gray-100: #f5f5f5;
+    --gray-50: #f7f7f7;
+    --gray-0: #ffffff;
 
-    --neutral-alpha-24: #99a0ae3d;
-    --neutral-alpha-16: #99a0ae29;
-    --neutral-alpha-10: #99a0ae1a;
+    --gray-alpha-24: #a3a3a33d;
+    --gray-alpha-16: #a3a3a329;
+    --gray-alpha-10: #a3a3a31a;
+
+    --slate-950: #0e121b;
+    --slate-900: #181b25;
+    --slate-800: #222530;
+    --slate-700: #2b303b;
+    --slate-600: #525866;
+    --slate-500: #717784;
+    --slate-400: #99a0ae;
+    --slate-300: #cacfd8;
+    --slate-200: #e1e4ea;
+    --slate-100: #f2f5f8;
+    --slate-50: #f5f7fa;
+    --slate-0: #ffffff;
+
+    --slate-alpha-24: #99a0ae3d;
+    --slate-alpha-16: #99a0ae29;
+    --slate-alpha-10: #99a0ae1a;
+
+    --neutral-950: var(--gray-950);
+    --neutral-900: var(--gray-900);
+    --neutral-800: <var(--gray-800);
+    --neutral-700: var(--gray-700);
+    --neutral-600: var(--gray-600);
+    --neutral-500: var(--gray-500);
+    --neutral-400: var(--gray-400);
+    --neutral-300: var(--gray-300);
+    --neutral-200: var(--gray-200);
+    --neutral-100: var(--gray-100);
+    --neutral-50: var(--gray-50);
+    --neutral-0: var(--gray-0);
+
+    --neutral-alpha-24: var(--gray-alpha-24);
+    --neutral-alpha-16: var(--gray-alpha-16);
+    --neutral-alpha-10: var(--gray-alpha-10);
 
     --blue-950: #122368;
     --blue-900: #182f8b;
@@ -38,12 +72,12 @@
     --blue-alpha-16: #476cff29;
     --blue-alpha-10: #476cff1a;
 
-    --orange-950: #683412;
-    --orange-900: #8b4618;
-    --orange-800: #ad581f;
-    --orange-700: #d06925;
-    --orange-600: #e97d35;
-    --orange-500: #ff9147;
+    --orange-950: #71330a;
+    --orange-900: #96440d;
+    --orange-800: #b75310;
+    --orange-700: #ce5e12;
+    --orange-600: #e16614;
+    --orange-500: #fa7319;
     --orange-400: #ffa468;
     --orange-300: #ffc197;
     --orange-200: #ffd9c0;
@@ -174,7 +208,10 @@
     --black-alpha-16: #00000029;
     --black-alpha-10: #0000001a;
 
-    --overlay: #020d173d;
+    --overlay-gray: #3333333d;
+    --overlay-slate: #2b303b3d;
+
+    --overlay: var(--overlay-gray);
 
     --social-apple: #000;
     --social-twitter: #010101;
@@ -262,7 +299,7 @@
     --stable-light: var(--teal-200);
     --stable-lighter: var(--teal-50);
   }
-    
+
   .dark {
     --bg-strong-950: var(--neutral-0);
     --bg-surface-800: var(--neutral-200);
@@ -332,8 +369,11 @@
     --stable-light: var(--teal-alpha-24);
     --stable-lighter: var(--teal-alpha-16);
 
-    --overlay: #52586652;
-    
+    --overlay-gray: #3333338f;
+    --overlay-slate: #2b303b8f;
+
+    --overlay: var(--overlay-gray);
+
     --social-apple: #fff;
     --social-twitter: #fff;
     --social-github: #fff;
@@ -344,7 +384,7 @@
   }
   /*#endregion Colors */
 }
-  
+
 /* custom scale for Remix Icon */
 .remixicon path {
   transform: scale(0.8996);
