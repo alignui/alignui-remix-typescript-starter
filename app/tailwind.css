@@ -41,7 +41,7 @@
 
     --neutral-950: var(--gray-950);
     --neutral-900: var(--gray-900);
-    --neutral-800: <var(--gray-800);
+    --neutral-800: var(--gray-800);
     --neutral-700: var(--gray-700);
     --neutral-600: var(--gray-600);
     --neutral-500: var(--gray-500);
